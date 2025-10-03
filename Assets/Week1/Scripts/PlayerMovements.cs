@@ -37,6 +37,7 @@ public class PlayerMovements : MonoBehaviour
             //hit.transform.gameObject.TryGetComponent<IFlying>(out IFlying flying);
             //if(flying != null){flying.Flying();}
             //set position of lazer beam (world space !!)
+            if (hit.transform.gameObject.tag == "Box") Debug.Log("Hit box");
         }
     }
     private void CoolDown()
